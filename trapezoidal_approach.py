@@ -1,3 +1,9 @@
+# Simple code to approximate integrals
+# using trapezoidal approach. This example
+# is on the function: f(x) = sin(x) / x, [1, 3]
+# for n = 6
+# By: Gkountelos Dimitrios
+
 def trapezoidal(f, a, b, n):
     if n <= 0:
         raise ValueError("You typed n <= 0")
@@ -14,6 +20,5 @@ def trapezoidal(f, a, b, n):
     return result
 
 import math
-import sage
 f = lambda x : math.sin(math.radians(x)) / x
 print(trapezoidal(f, 1, 3, 6))
